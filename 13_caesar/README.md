@@ -8,6 +8,12 @@ Hint: You may need to convert letters to their unicode values. Be sure to read t
 
 write a function that takes a string to be encoded and a shift factor and then returns the encoded string:
 
+takes string as argument 
+convert each character in string to unicode 
+subtract n to all unicode values except all punctuations(if the value if above or lower the unicode punctuation threshold dont add n)
+if the new shifted  value is greater than the unicode value of z or smaller than unicode of A ,subtract the new value with  the limit of unicode(in this case z) and add the answer with the lower limit (a or 65) 
+
+
 ```javascript
 caesar('A', 1) // simply shifts the letter by 1: returns 'B'
 ```
